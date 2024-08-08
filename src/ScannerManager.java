@@ -6,22 +6,22 @@ public class ScannerManager {
         return scanner.nextInt();
     }
 
-    static double leerDouble(Scanner scanner, String mensaje) {
+    public static double leerDouble(Scanner scanner, String mensaje) {
         System.out.printf("%s: ", mensaje);
         return scanner.nextDouble();
     }
 
-    static String leerString(Scanner scanner, String mensaje) {
+    public static String leerString(Scanner scanner, String mensaje) {
         System.out.printf("%s: ", mensaje);
         return scanner.nextLine();
     }
 
-    static char leerChar(Scanner scanner, String mensaje) {
+    public static char leerChar(Scanner scanner, String mensaje) {
         System.out.printf("%s: ", mensaje);
         return scanner.next().charAt(0);
     }
 
-    static boolean leerBoolean(Scanner scanner, String mensaje) {
+    public static boolean leerBoolean(Scanner scanner, String mensaje) {
         System.out.printf("%s: ", mensaje);
         return scanner.nextBoolean();
     }

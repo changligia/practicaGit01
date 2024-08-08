@@ -9,10 +9,15 @@ public class Ejercicio1 {
 
         scanner.close();
 
-        imprimirSuma(numero1, numero2);
+        final var suma = sumarNumeros(numero1, numero2);
+        imprimirSuma(suma);
     }
 
-    static void imprimirSuma(int numero1, int numero2) {
-        System.out.printf("La suma de los 2 números es: %d%n", numero1 + numero2);
+    private static int sumarNumeros(int numero1, int numero2) {
+        return numero1 + numero2;
+    }
+
+    private static void imprimirSuma(int suma) {
+        System.out.printf("La suma de los 2 números es: %d%n", suma);
     }
 }
