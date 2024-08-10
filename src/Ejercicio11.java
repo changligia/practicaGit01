@@ -5,11 +5,11 @@ import java.util.Set;
 public class Ejercicio11 {
     public static void main(String[] args) {
         final var array = RandomUtilities.generarRandomArrayInt(50, 100, 20, new Random());
-        final var set = obtenerValoresUnicos(array);
+        final var set = obtenerSet(array);
         imprimirSet(set);
     }
 
-    private static Set<Integer> obtenerValoresUnicos(int[] array) {
+    private static Set<Integer> obtenerSet(int[] array) {
         final var set = new HashSet<Integer>();
         for (var elemento : array) {
             set.add(elemento);
